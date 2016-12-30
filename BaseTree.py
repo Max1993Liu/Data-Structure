@@ -1,3 +1,5 @@
+#Implementation for base tree class
+
 class Tree(object):
 	
 	class Position(object):
