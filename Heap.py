@@ -1,3 +1,5 @@
+#Priority queue realization with heap
+
 class PriorityQueueBase(object):
 
 	class _Item(object):
