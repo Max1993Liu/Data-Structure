@@ -1,4 +1,4 @@
-#Heap for priority queue
+#Grand merge for heap file
 
 class PriorityQueueBase(object):
 
