@@ -196,23 +196,6 @@ class LinkedBinaryTree(BinaryTree):
 	def preorder_indent(self):
 		self._indent(self.root())
 
-	def _indent_index(self, p, path):
-		depth = self.depth(p)
-		if self.parent(p):
-			parent = self.parent(p)
-			if p is self.left(parent):
-				path.append(1)
-			else:
-				path.append(2)
-		print path
-		print '.'.join(path)
-		
-		print '.'.join(path) , 2*depth*' ' , str(p.element()) 
-		for child in self.children(p):
-			self._indent_index(child, path)
-
-	def preorder_index_indent(self):
-		self._indent_index(self.root(), [])
 
 t = LinkedBinaryTree()
 root = t._add_root('Paper')
@@ -224,4 +207,4 @@ t._add_left(right, 'Two A')
 t._add_right(right, 'Two B')
 #for i in t:
 #	print i
-t.preorder_index_indent()
+
